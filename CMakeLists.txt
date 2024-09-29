@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.5.0)
 project(FlushTools VERSION 0.1.0 LANGUAGES C CXX)
 
 # Add the FlushTools library
-add_library(FlushTools src/FlushTools.cpp)
+add_library(FlushTools SHARED src/FlushTools.cpp)
 
 # Specify where to find the header files (without absolute paths in install target)
 target_include_directories(FlushTools PUBLIC
