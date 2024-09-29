@@ -45,3 +45,11 @@ target_link_libraries(test_flush_tools_random gtest_main FlushTools)
 # Add tests
 add_test(NAME RandomGenInRangeTest COMMAND test_flush_tools_random)
 
+# Add the test executable for TimerTest
+add_executable(test_timer tests/test_flush_tools_timer.cpp)
+
+# Link GoogleTest and FlushTools to the test executable
+target_link_libraries(test_timer gtest_main FlushTools)
+
+# Add tests
+add_test(NAME TimerTest COMMAND test_timer)

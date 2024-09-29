@@ -1,5 +1,5 @@
-#ifndef FlushTools_hpp
-#define FlushTools_hpp
+#ifndef FLUSH_TOOLS_HPP_
+#define FLUSH_TOOLS_HPP_
 
 #include <iostream>
 #include <random>
@@ -9,7 +9,8 @@
 
 class FlushTools {
 public:
-    int randomGen(unsigned long long min_val = 0, unsigned long long max_val = ULLONG_MAX);
+    int randomGen(unsigned long long min_val = 0, 
+                    unsigned long long max_val = ULLONG_MAX);
 };
 
-#endif
+#endif // FLUSH_TOOLS_HPP
