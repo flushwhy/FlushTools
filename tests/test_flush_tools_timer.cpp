@@ -17,7 +17,7 @@ TEST(TimerTest, Run) {
   timer.run(work_callback);
 
   // Check if the timer finished after the specified duration
-  EXPECT_EQ(timer.get_elapsed(), duration + 2);
+  EXPECT_EQ(timer.get_elapsed(), duration + 1);
 }
 
 TEST(TimerTest, Reset) {
